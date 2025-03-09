@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="myshop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2>SHOP BIG,WIN BIG!</h2>
+        <div class="icon-cart" id="cartIcon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cartCount" id="cartCount">0</span>
+        </div>
+    </header>
+
+    <div class="image-grid">
+        <div class="product">
+            <img src="5g-text-phone-with-earpods.jpg" alt="Iphone">
+            <div class="product-info">
+                <h3>Iphone</h3>
+                <p>$20.00</p>
+                <button class="AddToCart" data-product="Iphone" data-price="20.00">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="alarmclock.jpg" alt="Alarm Clock">
+            <div class="product-info">
+                <h3>Alarm Clock</h3>
+                <p>$25.00</p>
+                <button class="AddToCart" data-product="Alarm Clock" data-price="25.00">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="pexels-mikhail-nilov-7814989.jpg" alt="pexels-mikhail-nilov-7814989">
+            <div class="product-info">
+                <h3>Dewar flask</h3>
+                <p>$15.00</p>
+                <button class="AddToCart" data-product="Dewar flask" data-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="bible.jpg" alt="Bible">
+            <div class="product-info">
+                <h3>Bible</h3>
+                <p>$63.00</p>
+                <button class="AddToCart" data-product="bible" data-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="mens-shoes-875948_1280.jpg" alt="Men Shoes">
+            <div class="product-info">
+                <h3>Men Shoes</h3>
+                <p>$45.00</p>
+                <button class="AddToCart" data-product="Men Shoes" data-price="45.00">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="canvas.jpg" alt="Sneakers">
+            <div class="product-info">
+                <h3>Sneakers</h3>
+                <p>$15.00</p>
+                <button class="AddToCart" data-product="Sneakers" data-price="15.00">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="sideCart" id="sideCart">
+        <h3>Your Cart</h3>
+        <p>Items in Cart: <span id="cartCountItems">0</span></p>
+        <div id="cartItems"></div>
+        <button class="total-btn" id="checkoutCart">Checkout</button>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
