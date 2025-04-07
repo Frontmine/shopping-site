@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        form {
+            max-width: 300px;
+            width: 100%;
+            padding: 20px;
+            height: max-content;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+        }
+
+        
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        <h2>WELCOME!</h2>
+        <div class="roap" id="roap-message"></div>
+        
+        <label for="username" class="required">Username</label>
+        <input type="text" placeholder="username" id="username" required>
+        
+        <label for="password" class="required">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+        
+        <button type="button" onclick="redirectToNextPage()">Next</button>
+    </form>
+
+    <script>
+        function redirectToNextPage() {
+            var form = document.getElementById('loginForm');
+            if (form.checkValidity()) {
+                window.location.href = "myshop.html";  
+            } else {
+                alert("Please fill out all required fields.");
+            }
+        }
+    </script>
+</body>
+</html>
